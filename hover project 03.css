@@ -1,0 +1,102 @@
+.box{
+    /*background-color: blue;*/
+    height:500px;
+    width:400px;
+    float: left;
+    color:navy; 
+    position: relative;
+    border:10px solid transparent;
+}
+.box .img img{
+    height:500px;
+    width:400px;
+}
+.img{
+	transform: rotateY(0deg);
+}
+.content{
+    color: blueviolet;
+    height:500px;
+    width:400px;
+    transform: rotateY(180deg);
+}
+.img , .content{
+    position: absolute;
+    backface-visibility: hidden;
+    transition:all 2s ease;
+}
+.box:hover .img{
+	transform: rotateY(180deg);
+}
+.box:hover .content{
+    transform: rotateZ(0deg);
+    background-color: rgb(189, 104, 238);
+    color: white;
+    text-align: center;
+}
+/*another hover*/
+
+.img1 , .content1{
+    position: absolute;
+    backface-visibility: hidden;
+    transition:all 2s ease;
+}
+
+.box0 .img1 img{
+    height:500px;
+    width:400px;
+}
+.content1{
+    color: white;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    background-color: teal;
+    top: -100%;
+    transition: all 2s ease;
+
+}
+.box0{
+    overflow: hidden;
+    transition: all 2s ease;
+}
+.box0:hover .content1{
+    top: 0;
+    transition: all 2s ease;
+}
+/*another hover*/
+
+.img2 , .content2{
+    position: absolute;
+    backface-visibility: hidden;
+    transition:all 2s ease;
+}
+
+.box2 .img2 img{
+    height:500px;
+    width:400px;
+}
+.content2{
+    color: white;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    background-color: teal;
+    top: -100%;
+    transition: all 2s ease;
+
+}
+.box2{
+    overflow: hidden;
+    transition: all 2s ease;
+}
+.box2:hover .content2{
+    top: 0px;
+    transition: all 2s ease;
+    padding-top:50px;
+}
+.box2:hover{
+    transform: scale(0.8);
+    border: 10px solid violet;
+    border-radius: 100%;
+}
